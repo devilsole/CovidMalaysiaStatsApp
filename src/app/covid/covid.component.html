@@ -1,0 +1,59 @@
+
+
+<ng-container *ngIf="data$ | async as data; else pending">
+
+    <div class="ColumnHeader">
+
+
+    <table >
+        <tr>
+          <td>Positive Case</td>
+          <td>{{data.testedPositive | number}}</td>
+        </tr>
+        <tr>
+            <td>Recovered Case</td>
+            <td>{{data.recovered | number}}</td>
+          </tr>
+          <tr>
+            <td>Active Case</td>
+            <td>{{data.activeCases | number}}</td>
+          </tr>
+          <tr>
+            <td>In ICU</td>
+            <td>{{data.inICU | number}}</td>
+          </tr>
+          <tr>
+            <td>Respiratory Aid</td>
+            <td>{{data.respiratoryAid | number}}</td>
+          </tr>
+          <tr>
+            <td>Deceased</td>
+            <td>{{data.deceased | number}}</td>
+          </tr>
+          <tr>
+            <td>Country</td>
+            <td>{{data.country | number}}</td>
+          </tr>
+          <tr>
+            <td>Last Updated</td>
+            <td>{{data.lastUpdatedAtSource | Date}}</td>
+          </tr>
+          <tr>
+            <td>Date Source</td>
+            <td>{{data.sourceUrl}}</td>
+          </tr>
+    </table>
+
+     
+</div>
+
+  </ng-container>
+  
+  <ng-template #pending>
+    <div>pending</div>
+  </ng-template>
+
+  <p style="padding: 15px;">This App is Design by Ahsan . </p>
+
+
+
