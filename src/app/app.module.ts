@@ -19,6 +19,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { MatSliderModule} from '@angular/material/slider';
+import { ConnectionService } from './services/connection.service';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBkXKYfOu2WRvNMYeKgZPVr0zntIVgBw1A",
